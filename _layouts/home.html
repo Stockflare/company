@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+
+	{% include head.html %}
+
+
+	<body>
+
+		<div class="container menu-overlay">
+			  <div class="row">
+		      <div class="col-md-5">
+		        <img src="/images/logo_big.png"/>
+		        <h2>
+		          My company is ran by Stockflare.com and features all the best companies around the world. We do tend to miss one out so please do tell us via twitter if we have @stockflare
+		        </h2>
+		      </div>
+
+		      <div class="col-md-7 company-list">
+		        <ul>
+		          <a href="/mcdonalds">
+		            <li><img src="/images/mcdonalds-logo.jpg" class="img-responsive" /></li>
+		          </a>
+		          <a href="/starbucks">
+		            <li><img src="/images/starbucks-logo.png" class="img-responsive" /></li>
+		          </a>
+		          <a href="/tesla">
+		            <li><img src="/images/tesla-logo.jpg" class="img-responsive" /></li>
+		          </a>
+		          <a href="/microsoft">
+		            <li><img src="/images/microsoft-logo.png" class="img-responsive" /></li>
+		          </a>
+		          <a href="/yahoo">
+		            <li><img src="/images/yahoo-logo.jpg" class="img-responsive" /></li>
+		          </a>
+		          <a href="/netflix">
+		            <li><img src="/images/netflix-logo.png" class="img-responsive" /></li>
+		          </a>
+		          <a href="/{{ page.id }}"><li></li></a>
+		          <a href="/{{ page.id }}"><li></li></a>
+		          <a href="/{{ page.id }}"><li></li></a>
+		          <a href="/{{ page.id }}"><li></li></a>
+		          <a href="/{{ page.id }}"><li></li></a>
+		          <a href="/{{ page.id }}"><li></li></a>
+		        </ul>
+		      </div>
+		    </div>
+		</div>
+
+	</body>
+</html>

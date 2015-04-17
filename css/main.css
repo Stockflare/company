@@ -1,0 +1,422 @@
+html, body
+{
+  -webkit-font-smoothing: antialiased;
+}
+
+body
+{
+
+}
+
+p
+{
+  margin-bottom: 0px;
+}
+
+
+.visible
+{
+  color:#000 !important;
+}
+
+
+.navbar
+{
+  background:transparent;
+  border-bottom:none;
+  box-shadow:none;
+}
+
+.navbar .container-fluid
+{
+  padding-left:25px;
+  padding-right: 25px;
+}
+
+.navbar-nav>li>a {
+  font-size:13px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar .fa
+{
+  font-size:19px;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    height:80px;
+    padding:31px 15px;
+}
+
+.navbar-brand img
+{
+  margin:auto;
+}
+
+.navbar-default .navbar-nav>li>a
+{
+  color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover
+{
+  color:rgba(255,255,255,0.4);
+}
+
+.navbar-default .navbar-nav>li>a:focus
+{
+  color:rgba(255,255,255,1);
+}
+
+.navbar-nav>li>a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 20px;
+  color:#fff;
+}
+
+
+.action-buttons
+{
+  padding:22px;
+}
+
+.action-buttons a
+{
+  background:none;
+  border:1px solid white;
+  color:#fff;
+  font-weight: 600;
+  font-size:13px;
+  padding:9px 15px;
+}
+
+.action-buttons a .fa
+{
+  font-size:14px;
+  margin-right:4px;
+}
+
+.action-buttons a:hover
+{
+  background:#fff;
+  color:#000;
+  border:1px solid #fff;
+}
+
+#canvas
+{
+  position:fixed;
+  display:block;
+  right:0;
+  top:0;
+  width:55%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#content
+{
+  display:block;
+  left:0;
+  top:0;
+  width:50%;
+  z-index:4;
+}
+
+#content .container-fluid
+{
+  padding:100px 40px;
+}
+
+#instafeed
+{
+  display:block;
+  width:100%;
+  z-index:1;
+  opacity:1;
+}
+
+
+h1
+{
+  font-weight:bold;
+  font-size: 30px;
+  color: #FFFFFF;
+  line-height: 37px;
+  margin-bottom:20px;
+  margin-top:10px;
+}
+
+h2
+{ 
+  font-weight:bold;
+  font-size: 30px;
+  color: #FFFFFF;
+  line-height: 37px;
+  margin-bottom:20px;
+  margin-top:10px;
+}
+
+h4
+{
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0.85px;
+  line-height: 15px;
+}
+
+
+.stream li
+{
+  background:#fff !important;
+  border-radius:3px;
+}
+
+.star-rating p
+{
+  opacity: 0.39;
+  font-weight: bold;
+  font-size: 13px;
+  color: #000000;
+  line-height: 46px;
+}
+
+
+.star-rating
+{
+  border-radius:3px;
+  border:1px solid rgba(0,0,0,.2);
+  margin-bottom: 15px;
+}
+
+.star-rating .stars
+{
+  opacity: 0.4;
+  font-weight: bold;
+  font-size: 13px;
+  color: #000000;
+  padding:16px 0px;
+  line-height: 15px;
+}
+
+.star-rating .stars .fa
+{
+  margin-right:2px;
+}
+
+.yahoo
+{
+  background-color:#612fcc;
+}
+
+.yahoo_bg
+{
+  background-image:url('/images/yahoo.png');
+}
+
+.mcdonalds
+{
+  background-color:#FDBD10; 
+}
+
+.mcdonalds_bg
+{
+  background-image:url('/images/mcdonalds.png');
+}
+
+
+.netflix
+{
+  background-color:#B9090B; 
+}
+
+.netflix_bg
+{
+  background-image:url('/images/netflix.png');
+}
+
+.virgin
+{
+  background-color:#CC0A00; 
+}
+
+.virgin_bg
+{
+  background-image:url('/images/richard.png');
+}
+
+
+.tesla
+{
+  background-color:#e42254;
+}
+
+.tesla_bg
+{
+  background-image:url('/images/elon.png');
+}
+
+.microsoft
+{
+  background-color:#00afea;
+}
+
+.microsoft_bg
+{
+  background-image:url('/images/billgates.png');
+}
+
+.starbucks
+{
+  background-color: #007042;
+}
+
+.starbucks_bg
+{
+  background-image:url('/images/starbucks.png');
+}
+
+
+#news ul
+{
+  list-style: none;
+  margin:0px;
+  padding:0px;
+}
+
+#news ul li
+{
+  padding:20px;
+  background:#fff;
+  border-radius: 3px;
+  margin:10px 0px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #A9A9A9;
+}
+
+
+#news ul li .headline a
+{
+  font-size:16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 11px;
+  display: block;
+}
+
+#news .date
+{
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/* START OF MENU OVERLAY STYLES */
+
+.menu-overlay
+{
+  padding-top:10%;
+  background:#fff;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.menu-active
+{
+  top:0px;
+  opacity: 1;
+  pointer-events:all;
+}
+
+#menu-overlay-button
+{
+  z-index:99;
+}
+
+.menu-overlay .company-list ul
+{
+  list-style: none;
+}
+
+.menu-overlay .company-list ul li
+{
+  float:right;
+  width:20%;
+  height:115px;
+  background:#fff;
+  margin-right:8px;
+  margin-bottom:8px;
+  border-radius:3px;
+  overflow:hidden;
+}
+
+.menu-overlay .company-list ul li img
+{
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%)
+}
+
+.menu-overlay .company-list ul li img:hover
+{
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%)
+}
+
+.menu-overlay h2
+{
+  opacity: 0.96;
+  font-size: 20px;
+  color: #777777;
+  line-height: 40px;
+  font-weight: 400;
+  padding-top:30px;
+}
+
+.static
+{
+  position:absolute;
+}
+
+
+/* END OF MENU OVERLAY STYLES */
+
+
+/* START OF RESPONSIVE STYLES */
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 520px) {
+
+  #canvas
+  {
+    display:none;
+  }
+
+  #content
+  {
+    width:100%;
+  }
+
+  .text-right
+  {
+    text-align: left;
+  }
+
+/* Styles */
+}
