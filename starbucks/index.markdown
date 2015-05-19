@@ -5,10 +5,12 @@ classes: jobs
 title:  "Jobs at Stockflare"
 
 bgimage: starbucks_bg
-id: starbucks
+textcolor: starbucks_text
+
+id: Starbucks
 stockname: Starbucks Inc
+ric: SBUX.O
 ticker: SBUX
-market: NASDAQ
 
 feedurl: http://feeds.feedburner.com/nasdaq/wStw
 

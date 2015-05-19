@@ -1,11 +1,23 @@
 html, body
 {
   -webkit-font-smoothing: antialiased;
+  height:100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
 body
 {
 
+}
+
+.no-padding
+{
+  padding:0px;
+}
+
+a:hover
+{
+  text-decoration: none;
 }
 
 p
@@ -19,12 +31,13 @@ p
   color:#000 !important;
 }
 
-
 .navbar
 {
   background:transparent;
   border-bottom:none;
   box-shadow:none;
+  border:none;
+  z-index:99999;
 }
 
 .navbar .container-fluid
@@ -39,10 +52,6 @@ p
   color: #fff;
 }
 
-.navbar .fa
-{
-  font-size:19px;
-}
 
 .navbar-brand
 {
@@ -84,89 +93,236 @@ p
 }
 
 
-.action-buttons
+.home-frame
 {
-  padding:22px;
+  padding: 180px 44px 90px 44px;
 }
 
-.action-buttons a
+.home-block
 {
-  background:none;
-  border:1px solid white;
-  color:#fff;
-  font-weight: 600;
-  font-size:13px;
-  padding:9px 15px;
-}
-
-.action-buttons a .fa
-{
-  font-size:14px;
-  margin-right:4px;
-}
-
-.action-buttons a:hover
-{
-  background:#fff;
-  color:#000;
-  border:1px solid #fff;
-}
-
-#canvas
-{
+  background:#050505;
   position:fixed;
-  display:block;
-  right:0;
-  top:0;
-  width:55%;
-  height:100%;
-  background-repeat: no-repeat;
-  background-size:cover;
-  z-index: 2;
+  top:45px;
+  left:45px;
+  padding:22px 22px;
+  width:69px;
+  height:69px;
+  z-index:99;
+  color:#fff;
+  font-size:13px;
+  display:block !important;
+}
+
+
+.menu {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    width: 69px;
+    height: 69px;
+    background:#050505;
+    color:#fff;
+    font-size:13px;
+}
+
+.menu .home
+{
+  color:#fff;
+  padding:25px 27px;
+  display: block;
+}
+
+.menu a:hover
+{
+  color:rgba(255,255,255,0.7);
+}
+
+.menu a:active
+{
+  color:#fff;
+}
+
+.twitter, .facebook {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size:13px;
+    color:#fff;
+    transition: all 0.2s ease-out;
+}
+
+.twitter {
+    background: #55ACEE;
+    padding:22px;
+    color:#fff;
+}
+
+.facebook {
+    background: #0099ED;
+    padding:19px 26px;
+    color:#fff;
+}
+
+.menu:hover .twitter {
+    left: 100%;
+}
+
+.menu:hover .facebook {
+    top: 100%;
+}
+
+.overflow
+{
   overflow: hidden;
 }
 
-#content
+
+
+/* START OF HOMEPAGE STYLES */
+
+.company-list
 {
-  display:block;
-  left:0;
-  top:0;
-  width:50%;
-  z-index:4;
+  padding-bottom:60px;
+  padding-right:0px;
+
 }
 
-#content .container-fluid
+.company-list ul
 {
-  padding:100px 40px;
+  list-style: none;
+  margin:0px;
+  padding:0px;
 }
 
-#instafeed
+.company-list ul a li
 {
+  width:20%;
+  padding-bottom:20%;
   display:block;
-  width:100%;
-  z-index:1;
-  opacity:1;
+  float:left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
+
+/* START OF FRAME STYLES */
+
+.first-frame
+{
+  height:100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: table;
+}
+
+.second-frame
+{
+  background-color:#fff;
+}
+
+.third-frame
+{
+  color:#fff;
+}
+
+.third-frame p
+{
+  font-weight: 500;
+  opacity:0.7;
+
+}
+
+.view-full
+{
+  background-color:#07a3ee;
+  padding-top:90px;
+  padding-bottom:79px;
+}
+
+.tweet
+{
+  background-color:#55ACEE;
+  padding-top:90px;
+  padding-bottom:79px;
+}
+
+.love
+{
+  padding-top:100px;
+  padding-bottom:100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.row-fluid
+{
+  height: 100%; 
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.center
+{
+  float:none;
+  margin:0 auto;
+}
+
+.stars .fa-star
+{
+  margin-right:5px;
+  color:#fff;
+  margin-bottom:10px;
+}
+
 
 
 h1
 {
   font-weight:bold;
-  font-size: 30px;
-  color: #FFFFFF;
-  line-height: 37px;
   margin-bottom:20px;
   margin-top:10px;
+  font-family: "proxima-nova",sans-serif;
+  font-size: 87px;
+  color: #FFFFFF;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 h2
 { 
-  font-weight:bold;
-  font-size: 30px;
+  font-weight:900;
   color: #FFFFFF;
-  line-height: 37px;
-  margin-bottom:20px;
-  margin-top:10px;
+  font-family: "proxima-nova",sans-serif;
+  /* $21.42: */
+  font-family: ProximaNova-Extrabld;
+  font-size: 87px;
+  line-height: 104px;
+}
+
+
+h3
+{
+
+  font-size: 30px;
+  line-height: 45px;
+  font-weight:300;
+  margin-bottom:10px;
 }
 
 h4
@@ -177,48 +333,55 @@ h4
   color: #FFFFFF;
   letter-spacing: 0.85px;
   line-height: 15px;
+  font-family: "proxima-nova",sans-serif;
 }
 
+h5
+{ 
+  font-weight:900;
+  color: #FFFFFF;
+  font-family: "proxima-nova",sans-serif;
+  /* $21.42: */
+  font-family: ProximaNova-Extrabld;
+  font-size: 34px;
+  text-transform: uppercase;
+}
 
-.stream li
+.sub-text
 {
-  background:#fff !important;
-  border-radius:3px;
+  font-size: 16px;
+  color: #B7B7B7;
+  line-height: 32px;
+  font-weight: 400;
+  padding-bottom: 30px;
 }
 
-.star-rating p
+.home-frame h3
 {
-  opacity: 0.39;
-  font-weight: bold;
-  font-size: 13px;
-  color: #000000;
-  line-height: 46px;
+  margin-bottom: 30px;
 }
 
-
-.star-rating
+.pricing
 {
-  border-radius:3px;
-  border:1px solid rgba(0,0,0,.2);
-  margin-bottom: 15px;
+  background:#fff;
+  padding: 8px 15px;
+  display:inline;
 }
 
-.star-rating .stars
+.title
 {
-  opacity: 0.4;
-  font-weight: bold;
-  font-size: 13px;
-  color: #000000;
-  padding:16px 0px;
-  line-height: 15px;
+  padding:130px 130px;
+  border-bottom: 1px solid #eee;
 }
 
-.star-rating .stars .fa
+.title img
 {
-  margin-right:2px;
+  float:left;
+  height:100%;
+  margin-right:30px;
 }
 
-.yahoo
+.Yahoo
 {
   background-color:#612fcc;
 }
@@ -228,9 +391,14 @@ h4
   background-image:url('/images/yahoo.png');
 }
 
-.mcdonalds
+.Mcdonalds
 {
-  background-color:#FDBD10; 
+  background-color:#ffcf33; 
+}
+
+.mcdonalds_text
+{
+  color:#DBA800; 
 }
 
 .mcdonalds_bg
@@ -238,8 +406,14 @@ h4
   background-image:url('/images/mcdonalds.png');
 }
 
+.mcdonalds_menu
+{
+  background-image:url('/images/mcdonalds-menu.png');
+}
 
-.netflix
+/* NETFLIX START */
+
+.Netflix
 {
   background-color:#B9090B; 
 }
@@ -249,40 +423,189 @@ h4
   background-image:url('/images/netflix.png');
 }
 
-.virgin
+.netflix_text
 {
-  background-color:#CC0A00; 
+  color:#B9090B;
 }
 
-.virgin_bg
+.netflix_menu
 {
-  background-image:url('/images/richard.png');
+  background-image:url('/images/netflix-menu.png');
 }
 
+/* NETFLIX END */
 
-.tesla
+
+/* YAHOO START */
+
+.Yahoo
 {
-  background-color:#e42254;
+  background-color:#3b0098; 
+}
+
+.yahoo_bg
+{
+  background-image:url('/images/yahoo.png');
+}
+
+.yahoo_text
+{
+  color:#3b0098;
+}
+
+.yahoo_menu
+{
+  background-image:url('/images/yahoo-menu.png');
+}
+
+/* YAHOO END */
+
+/* APPLE START */
+
+.Apple
+{
+  background-color:#060606; 
+}
+
+.apple_bg
+{
+  background-image:url('/images/apple.png');
+}
+
+.apple_text
+{
+  color:#060606;
+}
+
+.apple_menu
+{
+  background-image:url('/images/apple-menu.png');
+}
+
+/* APPLE END */
+
+/* AMAZON START */
+
+.Amazon
+{
+  background-color:#f49900; 
+}
+
+.amazon_bg
+{
+  background-image:url('/images/amazon.png');
+}
+
+.amazon_text
+{
+  color:#f49900;
+}
+
+.amazon_menu
+{
+  background-image:url('/images/amazon-menu.png');
+}
+
+/* AMAZON END */
+
+/* FACEBOOK START */
+
+.Facebook
+{
+  background-color:#455b95; 
+}
+
+.facebook_bg
+{
+  background-image:url('/images/facebook.png');
+}
+
+.facebook_text
+{
+  color:#455b95;
+}
+
+.facebook_menu
+{
+  background-image:url('/images/facebook-menu.gif');
+}
+
+/* FACEBOOK END */
+
+/* DISNEY START */
+
+.Disney
+{
+  background-color:#024e9b; 
+}
+
+.disney_bg
+{
+  background-image:url('/images/disney.png');
+}
+
+.disney_text
+{
+  color:#024e9b;
+}
+
+.disney_menu
+{
+  background-image:url('/images/disney-menu.gif');
+}
+
+/* DISNEY END */
+
+
+.Tesla
+{
+  background-color:#d1000e;
+}
+
+.tesla_text
+{
+  color:#d1000e;
 }
 
 .tesla_bg
 {
-  background-image:url('/images/elon.png');
+  background-image:url('/images/tesla.png');
 }
 
-.microsoft
+.tesla_menu
+{
+  background-image:url('/images/tesla-menu.jpg');
+}
+
+.Microsoft
 {
   background-color:#00afea;
 }
 
-.microsoft_bg
+.microsoft_text
 {
-  background-image:url('/images/billgates.png');
+  color:#00afea;
 }
 
-.starbucks
+.microsoft_bg
+{
+  background-image:url('/images/microsoft.png');
+}
+
+.microsoft_menu
+{
+  background-image:url('/images/microsoft_animated.gif');
+}
+
+
+.Starbucks
 {
   background-color: #007042;
+}
+
+.starbucks_text
+{
+  color:#007042;
 }
 
 .starbucks_bg
@@ -290,110 +613,102 @@ h4
   background-image:url('/images/starbucks.png');
 }
 
+.starbucks_menu
+{
+  background-image:url('/images/starbucks_animated.gif');
+}
 
-#news ul
+
+
+#news
 {
   list-style: none;
   margin:0px;
   padding:0px;
 }
 
-#news ul li
+.feedburnerFeedBlock ul
 {
-  padding:20px;
-  background:#fff;
-  border-radius: 3px;
-  margin:10px 0px;
-  overflow: hidden;
-  font-size: 14px;
-  color: #A9A9A9;
+  padding: 0px;
+  margin: 0px;
 }
 
 
-#news ul li .headline a
+
+#news li
 {
-  font-size:16px;
-  font-weight: 500;
-  line-height: 1.5em;
-  margin-bottom: 11px;
+  padding: 60px;
+  overflow: hidden;
+  font-size: 17px;
+  color: #8A8A8A;
+  cursor: pointer;
+  width: 33.3%;
+  float: left;
+  height: 550px;
+}
+
+.feedburnerFeedBlock ul li:nth-child(odd)
+{
+  background:#fcfcfc;
+}
+
+
+#news li .headline a
+{
+  font-weight: 300;
+  margin-bottom: 5px;
   display: block;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 26px;
+  color: #232323;
+  line-height: 40px;
+  text-decoration: none;
 }
 
 #news .date
 {
-  padding-top: 10px;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-
-/* START OF MENU OVERLAY STYLES */
-
-.menu-overlay
-{
-  padding-top:10%;
-  background:#fff;
-  transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-}
-
-.menu-active
-{
-  top:0px;
-  opacity: 1;
-  pointer-events:all;
-}
-
-#menu-overlay-button
-{
-  z-index:99;
-}
-
-.menu-overlay .company-list ul
-{
-  list-style: none;
-}
-
-.menu-overlay .company-list ul li
-{
-  float:right;
-  width:20%;
-  height:115px;
-  background:#fff;
-  margin-right:8px;
-  margin-bottom:8px;
-  border-radius:3px;
-  overflow:hidden;
-}
-
-.menu-overlay .company-list ul li img
-{
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%)
-}
-
-.menu-overlay .company-list ul li img:hover
-{
-  -webkit-filter: grayscale(0%); 
-  filter: grayscale(0%)
-}
-
-.menu-overlay h2
-{
-  opacity: 0.96;
+  padding: 20px 0px;
   font-size: 20px;
-  color: #777777;
-  line-height: 40px;
   font-weight: 400;
-  padding-top:30px;
+  color: #D5D5D5;
 }
 
-.static
+.modal-dialog
 {
-  position:absolute;
+  border-radius: 20px;
 }
 
+.modal-content
+{
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+.mailchimp-h2
+{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 500 !important;
+  font-size: 26px !important;
+  line-height: normal;
+  color:#000;
+}
+
+.mailchimp-p
+{
+  font-size: 16px !important;
+  color:#969696;
+  margin-bottom:30px;
+}
+
+#mc_embed_signup .button
+{
+  height:40px !important;
+  background-color: #3D96FC !important;
+}
 
 /* END OF MENU OVERLAY STYLES */
 
@@ -403,20 +718,75 @@ h4
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 520px) {
 
-  #canvas
+  h1
   {
-    display:none;
+    font-size:57px;
   }
 
-  #content
+  h2
+  {
+    font-size:57px;
+  }
+
+  .home-block-bars
+  {
+    top:0;
+    left:0;
+  }
+
+  .twitter-block
+  {
+    top:0;
+    left:0;
+  }
+
+  .facebook-block
+  {
+    top:0;
+    left:0;
+  }
+
+  .home-block-bars:hover ~ .twitter-block
+  {
+    left:69px;
+  }
+
+  .home-block-bars:hover ~ .facebook-block
+  {
+    top:69px;
+  }
+
+  .first-frame
+  {
+    background-image:none;
+  }
+
+  .modal-dialog
+  {
+    margin: 80px auto;
+  }
+
+  #news li
+  {
+    width: 100%;
+  }
+
+  .company-list ul a li
   {
     width:100%;
+    height:350px;
   }
 
-  .text-right
+  .img-responsive
   {
-    text-align: left;
+    width: 100%;
   }
+
+  .title
+  {
+    padding:50px;
+  }
+
 
 /* Styles */
 }

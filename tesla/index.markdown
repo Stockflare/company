@@ -5,11 +5,12 @@ classes: jobs
 title:  "Jobs at Stockflare"
 
 bgimage: tesla_bg
-id: tesla
+textcolor: tesla_text
+
+id: Tesla
 stockname: Tesla Inc
 ticker: TSLA
-market: NASDAQ
-twitterid: 587641904608780289
+ric: TSLA.O
 
 feedurl: http://feeds.feedburner.com/nasdaq/tOrT
 ---

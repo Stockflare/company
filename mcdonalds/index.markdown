@@ -5,13 +5,15 @@ classes: jobs
 title:  "Jobs at Stockflare"
 
 bgimage: mcdonalds_bg
-id: mcdonalds
+textcolor: mcdonalds_text
+
+id: Mcdonalds
 stockname: McDonald's Inc
+ric: MCD
 ticker: MCD
-market: NYSE
+
 
 feedurl: http://feeds.feedburner.com/nasdaq/ciSW
 
 
 ---
-

@@ -6,45 +6,72 @@
 
 
 	<body>
+      
 
-		<div class="container menu-overlay">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+          {% if page.layout == 'home' %}
+            <a href="/" id="menu-overlay-button" class="home-block"><img src="/images/logo.png"/></a>
+          {% else %}
+            <a href="/" id="menu-overlay-button" class="home-block-bars"><i class="fa fa-bars fa-lg"></i></a>
+            <a href="/" id="menu-overlay-button" class="twitter-block"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="/" id="menu-overlay-button" class="facebook-block"><i class="fa fa-facebook-official fa-2x"></i></a>
+          {% endif %}
+      </div>
+    </nav>
+
+
+		<div class="container-fluid home-frame">
 			  <div class="row">
-		      <div class="col-md-5">
-		        <img src="/images/logo_big.png"/>
-		        <h2>
-		          My company is ran by Stockflare.com and features all the best companies around the world. We do tend to miss one out so please do tell us via twitter if we have @stockflare
-		        </h2>
-		      </div>
-
-		      <div class="col-md-7 company-list">
-		        <ul>
-		          <a href="/mcdonalds">
-		            <li><img src="/images/mcdonalds-logo.jpg" class="img-responsive" /></li>
-		          </a>
-		          <a href="/starbucks">
-		            <li><img src="/images/starbucks-logo.png" class="img-responsive" /></li>
-		          </a>
-		          <a href="/tesla">
-		            <li><img src="/images/tesla-logo.jpg" class="img-responsive" /></li>
-		          </a>
-		          <a href="/microsoft">
-		            <li><img src="/images/microsoft-logo.png" class="img-responsive" /></li>
-		          </a>
-		          <a href="/yahoo">
-		            <li><img src="/images/yahoo-logo.jpg" class="img-responsive" /></li>
-		          </a>
-		          <a href="/netflix">
-		            <li><img src="/images/netflix-logo.png" class="img-responsive" /></li>
-		          </a>
-		          <a href="/{{ page.id }}"><li></li></a>
-		          <a href="/{{ page.id }}"><li></li></a>
-		          <a href="/{{ page.id }}"><li></li></a>
-		          <a href="/{{ page.id }}"><li></li></a>
-		          <a href="/{{ page.id }}"><li></li></a>
-		          <a href="/{{ page.id }}"><li></li></a>
-		        </ul>
+		      <div class="col-md-7">
+		        <h3>
+		          MYCO. is a playground ran by Stockflare.com and features best companies around the world.
+		        </h3>
+		        <span class="sub-text">We love the fact that anyone can get into the stock market easily, MYCO. allows anyone to have a small taste of the stock market life using simple data which can be seen on stockflare.com </span>
 		      </div>
 		    </div>
+		</div>
+
+		<div class="container-fluid no-padding overflow">
+			<div class="row">
+					<div class="col-md-12 company-list">
+		        <ul>
+		          <a href="/mcdonalds">
+		            <li class="mcdonalds_menu"></li>
+		          </a>
+		          <a href="/starbucks">
+		            <li class="starbucks_menu"></li>
+		          </a>
+		          <a href="/tesla">
+		            <li class="tesla_menu"></li>
+		          </a>
+		          <a href="/microsoft">
+		            <li class="microsoft_menu"></li>
+		          </a>
+		          <a href="/netflix">
+		            <li class="netflix_menu"></li>
+		          </a>
+		         	<a href="/yahoo">
+		            <li class="yahoo_menu"></li>
+		          </a>
+		         	<a href="/apple">
+		            <li class="apple_menu"></li>
+		          </a>
+		         	<a href="/facebook">
+		            <li class="facebook_menu"></li>
+		          </a>
+		         	<a href="/amazon">
+		            <li class="amazon_menu"></li>
+		          </a>
+		          <a href="/disney">
+		            <li class="disney_menu"></li>
+		          </a>
+		        </ul>
+		      </div>
+			</div>
 		</div>
 
 	</body>
