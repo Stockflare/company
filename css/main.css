@@ -789,3 +789,70 @@ h5
 
 /* Styles */
 }
+
+@media only screen and (device-width: 768px) {
+  #news li
+  {
+    width: 100%;
+  }
+
+  .menu
+  {
+    top:0;
+    left:0;
+  }
+
+  .twitter
+  {
+    left:100%;
+  }
+
+  .facebook
+  {
+    left:200%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #news li
+  {
+    width: 100%;
+  }
+  .menu
+  {
+    top:0;
+    left:0;
+  }
+
+  .twitter
+  {
+    left:100%;
+  }
+
+  .facebook
+  {
+    left:200%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #news li
+  {
+    width: 100%;
+  }
+  .menu
+  {
+    top:0;
+    left:0;
+  }
+
+  .twitter
+  {
+    left:100%;
+  }
+
+  .facebook
+  {
+    left:200%;
+  }
+}
