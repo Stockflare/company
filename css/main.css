@@ -717,30 +717,30 @@ h5
 
   h1
   {
-    font-size:57px;
+    font-size:40px;
   }
 
   h2
   {
-    font-size:57px;
+    font-size:40px;
+    margin-bottom:0px;
+    line-height: 64px;
   }
 
-  .home-block-bars
+  .menu
   {
     top:0;
     left:0;
   }
 
-  .twitter-block
+  .twitter
   {
-    top:0;
-    left:0;
+    left:100%;
   }
 
-  .facebook-block
+  .facebook
   {
-    top:0;
-    left:0;
+    left:200%;
   }
 
   .home-block-bars:hover ~ .twitter-block
@@ -756,6 +756,8 @@ h5
   .first-frame
   {
     background-image:none;
+    max-width: 100%;
+    padding-top:60px;
   }
 
   .modal-dialog
