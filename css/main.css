@@ -529,6 +529,126 @@ h5
 
 /* FACEBOOK END */
 
+/* GOOGLE START */
+
+.Google
+{
+  background-color:#4585f1; 
+}
+
+.google_bg
+{
+  background-image:url('/images/google.jpg');
+}
+
+.google_text
+{
+  color:#4585f1;
+}
+
+.google_menu
+{
+  background-image:url('/images/google-menu.png');
+}
+
+/* GOOGLE END */
+
+/* FORD START */
+
+.Ford
+{
+  background-color:#022d67; 
+}
+
+.ford_bg
+{
+  background-image:url('/images/ford.jpg');
+}
+
+.ford_text
+{
+  color:#022d67;
+}
+
+.ford_menu
+{
+  background-image:url('/images/ford-menu.png');
+}
+
+/* FORD END */
+
+/* GOPRO START */
+
+.Gopro
+{
+  background-color:#0e0e0e; 
+}
+
+.gopro_bg
+{
+  background-image:url('/images/gopro.jpg');
+}
+
+.gopro_text
+{
+  color:#0e0e0e;
+}
+
+.gopro_menu
+{
+  background-image:url('/images/gopro-menu.png');
+}
+
+/* GOPRO END */
+
+/* LINKEDIN START */
+
+.Linkedin
+{
+  background-color:#1272b7; 
+}
+
+.linkedin_bg
+{
+  background-image:url('/images/linkedin.jpg');
+}
+
+.linkedin_text
+{
+  color:#1272b7;
+}
+
+.linkedin_menu
+{
+  background-image:url('/images/linkedin-menu.png');
+}
+
+/* LINKEDIN END */
+
+/* BLIZZARD START */
+
+.Activision
+{
+  background-color:#2b2b2b; 
+}
+
+.activision_bg
+{
+  background-image:url('/images/activision.jpg');
+}
+
+.activision_text
+{
+  color:#2b2b2b;
+}
+
+.activision_menu
+{
+  background-image:url('/images/activison-menu.png');
+}
+
+/* GOOGLE END */
+
 /* DISNEY START */
 
 .Disney
