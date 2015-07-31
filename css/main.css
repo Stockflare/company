@@ -113,6 +113,16 @@ p
   display:block !important;
 }
 
+.stockflare-block
+{
+  position:fixed;
+  top:45px;
+  right:45px;
+  z-index:99;
+  display:block !important;
+}
+
+
 
 .menu {
     position: absolute;
@@ -128,8 +138,34 @@ p
 .menu .home
 {
   color:#fff;
-  padding:25px 27px;
+  padding:26px 27px;
   display: block;
+}
+
+.home:hover
+{
+  padding:26px 25px;
+}
+
+.home .fa-home
+{
+  font-size: 22px;
+  color: #fff;
+}
+
+.menu .home:hover .fa-home
+{
+  display:block;
+}
+
+.menu .home:hover .fa-bars
+{
+  display: none;
+}
+
+.menu .home .fa-home
+{
+  display:none;
 }
 
 .menu a:hover

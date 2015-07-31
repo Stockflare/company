@@ -9,13 +9,17 @@
         <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <!-- Collect the nav links, forms, and other content for toggling -->
-
+          <a href="http://www.stockflare.com" id="stockflare-hover" class="stockflare-block">
+            <img src="/images/stockflare-blue.png"/>
+          </a>
           {% if page.layout == 'home' %}
             <a href="/" id="menu-overlay-button" class="home-block"><img src="/images/logo.png"/></a>
           {% else %}
-
             <div class="menu">
-                <a href="/" class="home"><i class="fa fa-bars fa-lg"></i></a>
+                <a href="/" class="home">
+                  <i class="fa fa-bars fa-lg"></i>
+                  <i class="fa fa-home fa-lg"></i>
+                </a>
                 <a href="http://twitter.com/share?text=Check%20out%20{{ page.id }}%20@Stockflare%20${{ page.ticker }}" class="twitter popup">
                   <i class="fa fa-twitter fa-2x"></i>
                 </a>
