@@ -1,9 +1,9 @@
 # Site settings
 title: MyCo from Stockflare
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
+email: info@stockflare.com
+description: "MyCO explores great brands that are listed on the stock market. Why not see if the brand you like has the potential to be a great investments?"
+baseurl: "https://stockflare.com"
+url: "http://my.stockflare.com"
 
 # Build settings
 markdown: kramdown
