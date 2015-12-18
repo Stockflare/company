@@ -2,7 +2,7 @@
 title: MyCo from Stockflare
 email: info@stockflare.com
 description: "MyCO explores great brands that are listed on the stock market. Why not see if the brand you like has the potential to be a great investments?"
-baseurl: "https://stockflare.com"
+baseurl: ""
 url: "http://my.stockflare.com"
 
 # Build settings
