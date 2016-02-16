@@ -123,7 +123,8 @@
 
   <script>
 
-    var url = 'https://api.stockflare.com/api/1/data/stocks/{{ page.ric }}?key=ric';
+    var url = 'https://dozlacmd51.execute-api.us-east-1.amazonaws.com/v1/search';
+    var ric = '{{ page.ric }}'
 
     $(document).ready(function() {
         var $price = $('#price');
@@ -131,20 +132,31 @@
         var $change = $('#change');
         $.ajax({
             url: url,
-            type: 'GET',
-            success: function(data) {
+            data: {
+              conditions: {
+                "ric": ric
+              },
+              select: [
+                "price_change",
+                "rating",
+                "price"
+              ]
+            },
+            type: 'PUT',
+            success: function(response_data) {
+              data = response_data[0]
 
-              var change = Math.round(data.response.price_change * 100) / 100;
+              var change = Math.round(data.price_change * 100) / 100;
 
               if(change > 0) {
                 change = '+' + change;
               }
 
-              for(var i=0; i < data.response.rating -1; i++) {
+              for(var i=0; i < data.rating -1; i++) {
                 $stars.append($('<i>', { class: 'fa fa-star fa-2x'}));
               }
 
-                $price.html( data.response.price ); 
+                $price.html( data.price );
                 $change.html( change );
             }
         });
@@ -190,9 +202,9 @@
                      ',height=' + height +
                      ',top='    + top    +
                      ',left='   + left;
-        
+
         window.open(url, 'twitter', opts);
-     
+
         return false;
       });
   </script>
@@ -200,5 +212,5 @@
     {% include footer.html %}
 
   </body>
-  
+
 </html>
