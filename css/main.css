@@ -2,7 +2,7 @@ html, body
 {
   -webkit-font-smoothing: antialiased;
   height:100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 body
@@ -280,6 +280,7 @@ p
 {
   font-weight: 500;
   opacity:0.7;
+  color:#fff;
 
 }
 
@@ -308,7 +309,7 @@ p
 
 .row-fluid
 {
-  height: 100%; 
+  height: 100%;
   display:table-cell;
   vertical-align: middle;
 }
@@ -342,7 +343,7 @@ h1
 }
 
 h2
-{ 
+{
   font-weight:900;
   color: #FFFFFF;
   font-family: "proxima-nova",sans-serif;
@@ -372,7 +373,7 @@ h4
 }
 
 h5
-{ 
+{
   font-weight:900;
   color: #FFFFFF;
   font-family: "proxima-nova",sans-serif;
@@ -426,12 +427,12 @@ h5
 
 .Mcdonalds
 {
-  background-color:#ffcf33; 
+  background-color:#ffcf33;
 }
 
 .mcdonalds_text
 {
-  color:#DBA800; 
+  color:#DBA800;
 }
 
 .mcdonalds_bg
@@ -448,7 +449,7 @@ h5
 
 .Netflix
 {
-  background-color:#B9090B; 
+  background-color:#B9090B;
 }
 
 .netflix_bg
@@ -473,7 +474,7 @@ h5
 
 .Yahoo
 {
-  background-color:#3b0098; 
+  background-color:#3b0098;
 }
 
 .yahoo_bg
@@ -497,7 +498,7 @@ h5
 
 .Apple
 {
-  background-color:#060606; 
+  background-color:#060606;
 }
 
 .apple_bg
@@ -521,7 +522,7 @@ h5
 
 .Amazon
 {
-  background-color:#f49900; 
+  background-color:#f49900;
 }
 
 .amazon_bg
@@ -545,7 +546,7 @@ h5
 
 .Facebook
 {
-  background-color:#455b95; 
+  background-color:#455b95;
 }
 
 .facebook_bg
@@ -569,7 +570,7 @@ h5
 
 .Google
 {
-  background-color:#4585f1; 
+  background-color:#4585f1;
 }
 
 .google_bg
@@ -593,7 +594,7 @@ h5
 
 .Ford
 {
-  background-color:#022d67; 
+  background-color:#022d67;
 }
 
 .ford_bg
@@ -617,7 +618,7 @@ h5
 
 .Gopro
 {
-  background-color:#0e0e0e; 
+  background-color:#0e0e0e;
 }
 
 .gopro_bg
@@ -641,7 +642,7 @@ h5
 
 .Linkedin
 {
-  background-color:#1272b7; 
+  background-color:#1272b7;
 }
 
 .linkedin_bg
@@ -665,7 +666,7 @@ h5
 
 .Activision
 {
-  background-color:#2b2b2b; 
+  background-color:#2b2b2b;
 }
 
 .activision_bg
@@ -689,7 +690,7 @@ h5
 
 .Disney
 {
-  background-color:#024e9b; 
+  background-color:#024e9b;
 }
 
 .disney_bg
@@ -843,7 +844,7 @@ h5
 
 .mailchimp-h2
 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 500 !important;
   font-size: 26px !important;
   line-height: normal;
